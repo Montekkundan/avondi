@@ -1,0 +1,72 @@
+/* FEATURES */
+.features {
+  background: var(--Sea);
+  padding: 120px 160px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 80px;
+}
+
+.features h2 {
+  width: 1394px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 55px;
+  color: var(--Text);
+  margin-bottom: 0;
+}
+
+.feature-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.feature-card {
+  width: 416px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  margin-bottom: 0;
+  flex: 0 0 calc(33.333% - 54px);
+}
+
+.feature-icon {
+  width: 63px;
+  height: 63px;
+  background: var(--Horizon);
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-icon::after {
+  content: "Icon";
+  position: absolute;
+  left: 10px;
+  top: 17px;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3.9px;
+  color: var(--Text);
+}
+
+.feature-card h3 {
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 42px;
+  color: var(--Text);
+  margin-bottom: 20px;
+}
+
+.feature-card p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--Text);
+}

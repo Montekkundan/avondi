@@ -1,0 +1,219 @@
+/* LATEST NEWS SECTION */
+.latest-news {
+  background: var(--Waypoint);
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.latest-news-content {
+  background: var(--Waypoint);
+  padding: 80px 80px 80px 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  min-width: 600px;
+  position: relative;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.latest-news h3 {
+  width: 363px;
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 42px;
+  color: white;
+}
+
+.latest-news p {
+  width: 363px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: white;
+}
+
+.latest-news .secondary-cta {
+  background: var(--Sea);
+  color: var(--Text);
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+
+.latest-news .secondary-cta:hover {
+  background: var(--Sea);
+  color: var(--Text);
+  box-shadow: -9px 9px 0px var(--Beacon);
+  padding: 10px 20px;
+}
+
+.news-cards-container {
+  flex: 1;
+  padding: 80px;
+  overflow: hidden;
+  position: relative;
+  background: var(--Relay);
+}
+
+.news-cards {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease;
+}
+
+.news-card {
+  min-width: 317px;
+  height: 317px;
+  padding: 40px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.news-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.news-date {
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3.9px;
+  color: var(--Text);
+}
+
+.news-card h4 {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 36px;
+  color: var(--Text);
+}
+
+.keep-reading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.keep-reading-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none !important;
+  position: relative;
+  padding: 3px 3px;
+}
+
+.keep-reading span {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 30px;
+  color: var(--Text);
+  text-decoration: none !important;
+  position: relative;
+  z-index: 1;
+}
+
+.keep-reading-arrow {
+  width: 18px;
+  height: 19px;
+  position: relative;
+  z-index: 1;
+}
+
+/* This is the fixed hover effect */
+.keep-reading-link::after {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: 17px;
+  width: 0;
+  height: 16px;
+  background-color: var(--Sea);
+  z-index: 0;
+  transition: width 0.3s ease;
+}
+
+.keep-reading-link:hover::after {
+  width: 157px;
+}
+
+.arrow-icon {
+  width: 18px;
+  height: 19px;
+  position: relative;
+  overflow: hidden;
+}
+
+.arrow-right {
+  width: 7.5px;
+  height: 15px;
+  position: absolute;
+  left: 9px;
+  top: 2px;
+  outline: 2.2px var(--Text) solid;
+  outline-offset: -1.1px;
+}
+
+.news-navigation {
+  position: absolute;
+  top: 40%;
+  right: -24px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  z-index: 5;
+}
+
+.nav-arrow {
+  width: 48px;
+  height: 48px;
+  padding: 15px;
+  background: var(--Beacon);
+  border: none;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.nav-arrow::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 49px;
+  background: var(--Sea);
+}
+
+.next-arrow::before {
+  left: -1px;
+  top: 0;
+}
+
+.prev-arrow::before {
+  left: -1px;
+  top: 0;
+}
+
+.arrow-flip {
+  transform: rotate(180deg);
+}
+
+.nav-arrow.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

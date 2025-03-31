@@ -1,0 +1,127 @@
+/* HERO */
+.hero {
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+}
+
+.hero-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-content h1 {
+  color: var(--Text);
+  font-weight: 700;
+}
+
+.hero-content p {
+  color: var(--Text);
+  font-weight: 400;
+}
+
+.hero .cta {
+  padding: 10px 20px;
+  background: var(--Button-Background);
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 30px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-shadow: 0px 0px 0px #EA520D;
+  width: 30%;
+}
+
+.hero .cta:hover {
+  color: white;
+  box-shadow: -9px 9px 0px var(--Beacon);
+  padding: 10px 20px;
+}
+
+.hero-image {
+  overflow: hidden;
+  position: relative;
+}
+
+.image-carousel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.carousel-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-image.active {
+  opacity: 1;
+}
+
+.svg-divider {
+  position: absolute;
+  top: 40rem;
+  left: 45rem; 
+  width: 85vw;
+  height: auto;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none; 
+  transform: translateZ(0);
+}
+
+.svg-divider svg {
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
+/* Desktop specific styles */
+@media (min-width: 993px) {
+  .hero {
+    padding: 190px 0 120px 160px;
+    gap: 160px;
+  }
+  
+  .hero-content-wrapper {
+    max-width: 628px;
+  }
+  
+  .hero-content h1 {
+    font-size: 94px;
+    line-height: 105px;
+    width: 665px;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  
+  .hero-image {
+    flex: 1;
+    height: 638px;
+    margin-right: 0;
+    padding-right: 0;
+  }
+}

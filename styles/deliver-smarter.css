@@ -1,0 +1,184 @@
+/* DELIVER SMARTER SECTION */
+.deliver-smarter {
+  background: var(--Clarity);
+  padding: 120px 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.deliver-smarter-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.deliver-smarter.waypoint-hover {
+  background: var(--Waypoint);
+}
+
+.deliver-smarter.relay-hover h2
+.deliver-smarter.horizon-hover h2 {
+  color: var(--Button-Text);
+}
+
+.deliver-smarter.waypoint-hover h2, 
+.deliver-smarter.waypoint-hover p{
+  color: #FFF;
+}
+
+.deliver-smarter.relay-hover {
+  background: var(--Relay);
+}
+
+.deliver-smarter.horizon-hover {
+  background: var(--Horizon);
+}
+
+.deliver-smarter h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 55px;
+  max-width: 665px;
+  color: var(--Text);
+  transition: color 0.3s ease;
+  z-index: 5;
+}
+
+.deliver-smarter p {
+  font-size: 18px;
+  line-height: 30px;
+  max-width: 665px;
+  color: var(--Text);
+  transition: color 0.3s ease;
+  z-index: 5;
+}
+
+.cards {
+  display: flex;
+  gap: 40px;
+  z-index: 1;
+  position: relative;
+}
+
+.card {
+  width: 455px;
+  height: 579px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-size: cover;
+  background-position: center;
+  transition: background-color 0.3s ease;
+}
+
+.card:nth-child(1) {
+  background-image: var(--Gradient-Waypoint), url('../public/desktop/cards/1.png');
+}
+
+.card:nth-child(2) {
+  background-image: var(--Gradient-Relay), url('../public/desktop/cards/2.png');
+}
+
+.card:nth-child(3) {
+  background-image: var(--Gradient-Horizon), url('../public/desktop/cards/3.png');
+}
+
+.card:hover:nth-child(1) {
+  background-image: var(--Gradient-Default), url('../public/desktop/cards/1.png');
+}
+
+.card:hover:nth-child(2) {
+  background-image: var(--Gradient-Default), url('../public/desktop/cards/2.png');
+}
+
+.card:hover:nth-child(3) {
+  background-image: var(--Gradient-Default), url('../public/desktop/cards/3.png');
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #FFF;
+}
+
+.card-content > h3, .card-content > p {
+  color: #FFF;
+}
+
+.card-subtitle {
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3.9px;
+}
+
+.card h3 {
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+.card p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.secondary-cta {
+  padding: 10px 20px;
+  background: var(--Sea);
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 30px;
+  color: var(--Text);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  width: 60%;
+}
+
+.card .secondary-cta:hover {
+  background: var(--Sea);
+  color: var(--Text);
+  box-shadow: -9px 9px 0px var(--Beacon);
+  padding: 10px 20px;
+}
+
+.relay-vectors {
+  position: absolute;
+  top: 225px;
+  right: 160px;
+  display: flex;
+  gap: 95px;
+  z-index: 0;
+}
+
+.relay-vector {
+  width: 167px;
+  height: 209px;
+  z-index: -1;
+}
+
+.relay-vector path {
+  fill: var(--Relay);
+  transition: fill 0.3s ease;
+}
+
+/* Change the SVG color based on the section's background */
+.deliver-smarter.waypoint-hover .relay-vector path {
+  fill: var(--Relay);
+}
+
+.deliver-smarter.relay-hover .relay-vector path {
+  fill: var(--Waypoint);
+}
+
+.deliver-smarter.horizon-hover .relay-vector path {
+  fill: var(--Relay);
+}

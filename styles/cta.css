@@ -1,0 +1,63 @@
+/* CTA SECTION */
+.cta-section {
+  background: var(--Beacon);
+  padding: 40px 160px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.cta-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.cta-content h2 {
+  max-width: 723px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 55px;
+  color: white;
+}
+
+.cta-section .secondary-cta {
+  padding: 10px 20px;
+  background: var(--Sea);
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 30px;
+  color: var(--Text);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  width: 20%;
+}
+
+.cta-section .secondary-cta:hover {
+  background: var(--Sea);
+  color: var(--Text);
+  box-shadow: -9px 9px 0px var(--Waypoint);
+  padding: 10px 20px;
+}
+
+.cta-vector {
+  width: 297px;
+  height: 371px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-vector svg {
+  width: 100%;
+  height: 100%;
+}
+
+.cta-vector svg path {
+  fill: var(--Sea);
+}
