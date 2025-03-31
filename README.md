@@ -2,7 +2,9 @@
 
 ## Demo Video
 
-<video src="./assets/avondi.mp4" controls width="100%"></video>
+
+https://github.com/user-attachments/assets/417171ca-c53f-46c1-b121-f8d4ab5a9515
+
 
 ## Project Overview
 This repository contains the implementation of the Avondi landing page based on the provided Figma design. The implementation focuses on creating a responsive, interactive webpage that matches the design specifications while ensuring good performance and maintainability.
