@@ -33,8 +33,11 @@ document.addEventListener('DOMContentLoaded', function() {
   const imagePaths = [];
   let carouselInterval;
   
+  const isMobile = window.innerWidth <= 768;
+  
   for (let i = 1; i <= totalImages; i++) {
-    imagePaths.push(`public/desktop/image${i}.png`);
+    const folderPath = isMobile ? 'mobile' : 'desktop';
+    imagePaths.push(`public/${folderPath}/image${i}.png`);
   }
   
   imagePaths.forEach((path, index) => {
